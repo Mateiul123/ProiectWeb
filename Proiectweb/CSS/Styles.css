@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Fonth1;
+    src: url(/Proiectweb/Fonts/Nosifer-Regular.ttf);
+}
+
+
+.header{
+    background-color: rgb(90, 1, 1) ;
+    padding: 5%;
+    
+}
+
+.Firstpart{
+    text-align: center; 
+    background-color: rgb(90, 1, 1);
+    margin-bottom: 10%;
+
+}
+
+h1{
+    font-family: 'Fonth1';
+    margin: 50px auto 100 auto;
+    font-size: 300%;
+    color: #553283;
+}
+
+body {
+    margin: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #000000;
+    padding-bottom: 2%;
+}
+
+hr{
+    display: block;
+margin: 0 auto;
+height:20px;
+background:url(../Resurse/Imagini/asd.png) center; 
+border:0;
+}
+
+button {
+    display : block; 
+    background-color:rgb(90, 1, 1) ;
+    position: inherit;
+  }
+  button iframe {
+    pointer-events : none;
+    position: relative;
+    z-index : 0;
+    top: 100%;
+    border: 0;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background-color: #ADFE03;
+    padding: 50 px 20 20px;
+    color: rgb(90, 1, 1)
+    
+  }
+
+  .drepturiautor{
+    flex-grow: 1;
+
+  }
+
+  .BUTTON_YEV {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #000000;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 20px;
+    background-color: #11999E;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+ }
+ 
+ .BUTTON_YEV:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ 
