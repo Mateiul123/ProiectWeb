@@ -13,8 +13,11 @@
 .Firstpart{
     text-align: center; 
     background-color: rgb(90, 1, 1);
-    margin-bottom: 10%;
+    margin: bottom 10%;
 
+}
+.taburi-iframe{
+    padding: 5%;
 }
 
 h1{
@@ -38,13 +41,14 @@ body {
 main{
     background-color: #000000;
     padding-bottom: 2%;
+    color:rgb(90, 1, 1) ;
+    
 }
 
 hr{
     display: block;
 margin: 0 auto;
 height:20px;
-background:url(../Resurse/Imagini/asd.png) center; 
 border:0;
 }
 
@@ -63,7 +67,7 @@ button {
 
   footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -87,12 +91,12 @@ button {
     font-size: 20px;
     font-weight: 100;
     padding: 20px;
-    background-color: #11999E;
-    -webkit-box-shadow: 1px 1px 20px 0 #000000;
-    -moz-box-shadow: 1px 1px 20px 0 #000000;
-    box-shadow: 1px 1px 20px 0 #000000;
-    text-shadow: 1px 1px 20px #000000;
-    border: solid #337FED 1px;
+    background-color:#ADFE03;
+    -webkit-box-shadow: 1px 1px 20px 0 rgb(141,39,39);
+    -moz-box-shadow: 1px 1px 20px 0 rgb(141, 39, 39);
+    box-shadow: 1px 1px 20px 0 rgb(202, 15, 15);
+    text-shadow: 1px 1px 20px rgb(141, 39, 39);
+    border: solid #000000 1px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -101,13 +105,13 @@ button {
  }
  
  .BUTTON_YEV:hover {
-    border: solid #337FED 1px;
-    background: #1E62D0;
-    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    border: solid #000000 1px;
+    background: rgb(141,39,39);
+    background-image: -webkit-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
+    background-image: -moz-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
+    background-image: -ms-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
+    background-image: -o-linear-gradient(top,  rgb(141,39,39),rgb(141,39,39));
+    background-image: -webkit-gradient(to bottom, rgb(141,39,39), rgb(141,39,39));
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
