@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Darker Side</title>
+  <link rel="stylesheet" href="CSS/Styles.css">
+  <link rel="stylesheet" href="CSS/GeneralCSS.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      transition: transform 0.5s ease, border-radius 0.5s ease;
+    }
+    .gallery img:hover {
+      transform: rotate(360deg) scale(1.5);
+      border-radius: 15px;
+    }
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <nav>
+        <ul>
+          <li>Acasa
+            <ul>
+              <li><a id="Barbati"><i>Men's Clothing</i></a></li>
+              <li><a id="Femei"><i>Women's Clothing</i></a></li>
+              <li><a id="Despre"></a><q>The story</q></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Firstpart">
+      <h1><strong><i>Ready to embrace your darker side?</i></strong></h1>
+      <section>
+        <h2>Welcome to our shop</h2>
+        <section>
+          <figure>
+            <picture>
+              <source srcset="images/PozaIntrofinal_small.png" media="(max-width:800px)">
+              <img src="images/PozaIntrofinal.png" alt="Brand-photo">
+            </picture>
+            <figcaption>Embrace Your Darker Side - Our Brand Image</figcaption>
+          </figure>
+          <a style="text-align: left;" href="images/PozaIntrofinal.png" download>Download the photo</a>
+        </section>
+        <a href="https://drive.google.com/drive/folders/1ihntwdyTGmkNxkMzQ01WVpWoHjJrtqmX">Random page link</a>
+      </section>
+      <section id="Promotii">
+        <h2>Promotions</h2>
+        <h3>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mn style="color:#ADFE03;">1</mn>
+              <mo style="color:#ADFE03;">+</mo>
+              <mn style="color:#ADFE03;">1</mn>
+              <mo style="color:#ADFE03;">=</mo>
+              <mn style="color:#ADFE03;">1</mn>
+            </mrow>
+          </math>
+        </h3>
+      </section>
+    </div>
+  </header>
+  <main>
+    <section class="gallery"></section>
+    <section style="padding: 3%;">
+      <div>
+        <p style="text-align: center;">
+          Our mission is to bring out the dark side of yourself, and embrace it instead of being scared of it. We're trying exactly that with our clothing, something new and dark.
+        </p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th scope="row">Vanzari</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Haine Barbati</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Haine Femei</th>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <div class="taburi-iframe">
+        <a href="https://www.youtube.com/embed/M8v5wU5Xa3A?si=jxMKCw5W2r-_84sP" target="ifr-video">Gucci's Fall Winter 2024 Women's Fashion Show</a>
+        <hr>
+        <a href="https://www.youtube.com/embed/DgMJq67ZOwE?si=nNpF5A0qsQS7nm4t" target="ifr-video">Maison Margiela Artisanal Collection 2024</a>
+      </div>
+      <center>
+        <iframe name="ifr-video" src="https://www.youtube.com/embed/M8v5wU5Xa3A?si=jxMKCw5W2r-_84sP" allow="accelerator; autoplay; encrypted-media" frameborder="0"></iframe>
+      </center>
+    </section>
+  </main>
+  <footer>
+    <a href="#" id="link-top" style="padding: 3%;"><div id="triunghi"></div></a>
+    <br>
+    <a href="mailto:popmatei70@gmail.com" class="BUTTON_YEV" style="align-self: center;">Mail Me</a>
+    <br>
+    <a href="tel:+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-gear fa-fw fa-spin"></span>Call Us: +40726195996 </a>
+    <br>
+    <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica" target="_blank" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-house"></span> Visit Us: Strada Academiei 14, Bucharest, Romania</a>
+    <br>
+    <a href="https://wa.me/+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-handshake"></span>Chat on WhatsApp</a>
+    <br>
+    <small style="align-self: center; margin-right: 20px; font-size: larger;">&copy;<time datetime="2024-03-03" style="font-size: medium;">3 martie 2024</time>, Toate drepturile rezervate.</small>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "cale_galerie": "Proiectweb/Resurse/Imagini",
+  "imagini": [
+    {
+      "cale_relativa": "PozaIntrofinal.png",
+      "nume": "Poza Intro Final",
+      "descriere": "Introductory Image",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "PozaIntrofinal_medium.png",
+      "nume": "Poza Intro Medium",
+      "descriere": "Medium Introductory Image",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "PozaIntrofinal_small.png",
+      "nume": "Poza Intro Small",
+      "descriere": "Small Introductory Image",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "asd.png",
+      "nume": "ASD Image",
+      "descriere": "ASD Description",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "pozawelcome.png",
+      "nume": "Welcome Image",
+      "descriere": "Welcome Description",
+      "timp": "zi"
+    }
+  ]
+}
