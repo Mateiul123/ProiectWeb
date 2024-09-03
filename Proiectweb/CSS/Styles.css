@@ -1,3 +1,4 @@
+/* Reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,22 +48,14 @@ table {
     src: url(/Proiectweb/Fonts/Nosifer-Regular.ttf);
 }
 
-
 .header{
     background-color: rgb(90, 1, 1) ;
     padding: 5%;
-    
 }
 
 .Firstpart{
     text-align: center; 
     background-color: rgb(90, 1, 1);
-    margin: bottom 10%;
-
-}
-.taburi-iframe{
-    padding: 5%;
-    display: flex;
 }
 
 h1{
@@ -76,7 +69,6 @@ body {
     margin: 0;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -87,47 +79,44 @@ main{
     background-color: #000000;
     padding-bottom: 2%;
     color:rgb(90, 1, 1) ;
-    
 }
 
 hr{
     display: block;
-margin: 0 auto;
-height:20px;
-border:0;
+    margin: 0 auto;
+    height:20px;
+    border:0;
 }
 
 button {
     display : block; 
     background-color:rgb(90, 1, 1) ;
     position: inherit;
-  }
-  button iframe {
+}
+button iframe {
     pointer-events : none;
     position: relative;
     z-index : 0;
     top: 100%;
     border: 0;
-  }
+}
 
-  footer{
+footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
     background-color: #ADFE03;
-    padding: 50 px 20 20px;
-    color: rgb(90, 1, 1)
-    
-  }
+    padding: 50px 20px;
+    color: rgb(90, 1, 1);
+}
 
-  .drepturiautor{
+.drepturiautor{
     flex-grow: 1;
+}
 
-  }
-
-  .BUTTON_YEV {
+.BUTTON_YEV {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -147,9 +136,9 @@ button {
     cursor: pointer;
     text-align: center;
     margin-top: 20px;
- }
- 
- .BUTTON_YEV:hover {
+}
+
+.BUTTON_YEV:hover {
     border: solid #000000 1px;
     background: rgb(141,39,39);
     background-image: -webkit-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
@@ -161,5 +150,210 @@ button {
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
- }
- 
+}
+
+/* General Styling for Iframe Container */
+.container-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    background-color: transparent; /* Ensure background is transparent */
+    border: 5px solid #03855e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 10px;
+    overflow: visible; /* Ensure elements can extend outside the container */
+}
+
+/* Iframe Styling */
+.container-iframe > iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    z-index: 1; /* Ensure iframe stays above the background */
+}
+
+/* Tabs Styling */
+.taburi-iframe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make sure it matches the container */
+    position: absolute;
+    bottom: -35px; /* Move the buttons below the container */
+    left: 0;
+    background-color: transparent; /* Ensure buttons have no background */
+    padding: 0;
+    border-bottom-left-radius: 10px; /* Rounded bottom corners to match container */
+    border-bottom-right-radius: 10px; /* Rounded bottom corners to match container */
+}
+
+/* Buttons within Tabs */
+.taburi-iframe > a {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    background-color: #03855e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.3); /* Subtle inner shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Buttons */
+.taburi-iframe > a:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency on hover */
+    color: #03855e;
+    box-shadow: inset 0px 0px 20px rgba(3, 133, 94, 0.5); /* Subtle inner shadow on hover */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 700px) {
+    .container-iframe {
+        width: 100%;
+    }
+
+    .taburi-iframe {
+        padding: 0;
+    }
+
+    .taburi-iframe > a {
+        padding: 5px 0;
+        font-size: 0.9rem;
+    }
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 6px double #553283; 
+    padding: 5px;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px;
+    text-align: left;   
+    border: 1px solid #444; 
+    transition: border 0.75s ease-in-out;
+}
+
+/* Alternating column text color */
+.custom-table td:nth-child(odd), .custom-table th:nth-child(odd) {
+    color: #ff0000;
+}
+
+.custom-table td:nth-child(even), .custom-table th:nth-child(even) {
+    color: #553283;
+}
+
+.custom-table tbody tr:hover td {
+    background-color: #ADFE03;
+    color: #000000;
+    border: 5px solid #ADFE03;
+    transition: background-color 0.75s, color 0.75s, border-color 0.75s, border-width 0.75s;
+}
+
+.custom-table caption {
+    caption-side: bottom;
+    text-align: center;
+    color: #ADFE03;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "area1 area1 area1 area1"
+        "area5 area6 area6 area7"
+        "area3 area3 area2 area2"
+        "area4 area4 area2 area2"
+        "area8 area8 area8 area8"
+        "footer footer footer footer";
+    gap: 20px; /* Adjust as necessary */
+    padding: 20px;
+}
+
+/* Grid area assignments */
+.grid-area-1 { grid-area: area1; }
+.grid-area-2 { grid-area: area2; }
+.grid-area-3 { grid-area: area3; }
+.grid-area-4 { grid-area: area4; }
+.grid-area-5 { grid-area: area5; }
+.grid-area-6 { grid-area: area6; }
+.grid-area-7 { grid-area: area7; }
+.grid-area-8 { grid-area: area8; }
+.grid-area-9 { grid-area: area9; }
+.grid-area-footer { grid-area: footer; }
+
+/* Responsive adjustments */
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "area1 area1"
+            "area5 area6"
+            "area7 area7"
+            "area3 area2"
+            "area4 area4"
+            "area8 area8"
+            "footer footer";
+    }
+    .grid-container { gap: 15px; }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "area1"
+            "area5"
+            "area6"
+            "area7"
+            "area3"
+            "area2"
+            "area4"
+            "area8"
+            "footer";
+    }
+    .grid-container { gap: 10px; }
+}
+
+html {
+    font-size: 18px; 
+    transition: font-size 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+    html { font-size: 16px; }
+}
+
+@media screen and (max-width: 600px) {
+    html { font-size: 14px; }
+}
+
+/* Additional styles for padding, background, and other effects as needed */
+.grid-item {
+    padding: 15px;
+    background-color: #222; /* Example background color, adjust as needed */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for individual areas */
+.grid-area-1, .grid-area-2, .grid-area-3, .grid-area-4, 
+.grid-area-5, .grid-area-6, .grid-area-7, .grid-area-8, .grid-area-9 {
+    border: 2px solid #ADFE03; /* Add some border to distinguish areas */
+    padding: 15px;
+    background-color: rgba(173, 254, 3, 0.2); /* Add some transparency for better distinction */
+}

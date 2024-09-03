@@ -4,33 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Darker Side</title>
-  <link rel="stylesheet" href="CSS/Styles.css">
-  <link rel="stylesheet" href="CSS/GeneralCSS.css">
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-    .gallery img {
-      width: 100%;
-      transition: transform 0.5s ease, border-radius 0.5s ease;
-    }
-    .gallery img:hover {
-      transform: rotate(360deg) scale(1.5);
-      border-radius: 15px;
-    }
-    @media (max-width: 800px) {
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 500px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="Proiectweb/CSS/Styles.css">
+  <link rel="stylesheet" href="Proiectweb/CSS/GeneralCSS.css">
 </head>
 <body>
   <header>
@@ -54,12 +29,12 @@
         <section>
           <figure>
             <picture>
-              <source srcset="images/PozaIntrofinal_small.png" media="(max-width:800px)">
-              <img src="images/PozaIntrofinal.png" alt="Brand-photo">
+              <source srcset="Proiectweb/Resurse/Imagini/PozaIntrofinal_small.png" media="(max-width:800px)">
+              <img src="Proiectweb/Resurse/Imagini/PozaIntrofinal.png" alt="Brand-photo">
             </picture>
             <figcaption>Embrace Your Darker Side - Our Brand Image</figcaption>
           </figure>
-          <a style="text-align: left;" href="images/PozaIntrofinal.png" download>Download the photo</a>
+          <a style="text-align: left;" href="Proiectweb/Resurse/Imagini/PozaIntrofinal.png" download>Download the photo</a>
         </section>
         <a href="https://drive.google.com/drive/folders/1ihntwdyTGmkNxkMzQ01WVpWoHjJrtqmX">Random page link</a>
       </section>
@@ -69,66 +44,143 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mrow>
               <mn style="color:#ADFE03;">1</mn>
-              <mo style="color:#ADFE03;">+</mo>
+              <mo style="color:#553283;">+</mo>
               <mn style="color:#ADFE03;">1</mn>
               <mo style="color:#ADFE03;">=</mo>
-              <mn style="color:#ADFE03;">1</mn>
+              <mn style="color:#fe0303;">1</mn>
             </mrow>
           </math>
         </h3>
       </section>
     </div>
   </header>
+
   <main>
-    <section class="gallery"></section>
-    <section style="padding: 3%;">
-      <div>
-        <p style="text-align: center;">
-          Our mission is to bring out the dark side of yourself, and embrace it instead of being scared of it. We're trying exactly that with our clothing, something new and dark.
-        </p>
+<!-- Area 1: Presentation Section -->
+    <div class="grid-area-1 grid-item">
+      <h2>Presentation</h2>
+      <p>Our mission is to bring out the dark side of yourself, and embrace it instead of being scared of it. We're trying exactly that with our clothing, something new and dark.</p>
+    </div>
+      <!-- Area 5: Online Users Placeholder -->
+      <div class="grid-area-5 grid-item">
+        <h3>Online Users</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th scope="row">Vanzari</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Haine Barbati</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row">Haine Femei</th>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section>
-      <div class="taburi-iframe">
-        <a href="https://www.youtube.com/embed/M8v5wU5Xa3A?si=jxMKCw5W2r-_84sP" target="ifr-video">Gucci's Fall Winter 2024 Women's Fashion Show</a>
-        <hr>
-        <a href="https://www.youtube.com/embed/DgMJq67ZOwE?si=nNpF5A0qsQS7nm4t" target="ifr-video">Maison Margiela Artisanal Collection 2024</a>
+
+      <!-- Area 6: User Data Placeholder -->
+      <div class="grid-area-6 grid-item">
+        <h3>User Data and Statistics</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <center>
-        <iframe name="ifr-video" src="https://www.youtube.com/embed/M8v5wU5Xa3A?si=jxMKCw5W2r-_84sP" allow="accelerator; autoplay; encrypted-media" frameborder="0"></iframe>
-      </center>
-    </section>
+
+      <!-- Area 7: Site Data Placeholder -->
+      <div class="grid-area-7 grid-item">
+        <h3>Site and Server Data</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Area 3: Calendar Placeholder -->
+      <div class="grid-area-3 grid-item">
+        <h3>Upcoming Events Calendar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Area 2: Table Section -->
+      <div class="grid-area-2 grid-item">
+        <div class="custom-table-container">
+          <table class="custom-table">
+            <caption>Upcoming Events</caption>
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Annual Meeting</td>
+                <td>12th October 2024</td>
+                <td>Conference Room A</td>
+                <td>All staff are required to attend</td>
+              </tr>
+              <tr>
+                <td>Project Launch</td>
+                <td>20th October 2024</td>
+                <td colspan="2">Office Lobby</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Team Building Activity</td>
+                <td>5th November 2024</td>
+                <td>Outdoor Grounds</td>
+                <td>Open to the public</td>
+              </tr>
+              <tr>
+                <td>15th November 2024</td>
+                <td>Main Hall</td>
+                <td>Contact HR for details</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">For more information, contact HR at ext. 1234</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- Area 4: Announcements Placeholder -->
+      <div class="grid-area-4 grid-item">
+        <h3>Announcements</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Area 8: Additional Content -->
+      <div class="grid-area-8 grid-item">
+        <h3>Additional Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Area 9: Iframe and Video Section -->
+      <div class="grid-area-9 grid-item">
+        <div class="container-iframe">
+          <iframe name="ifr-video" src="https://www.youtube.com/embed/UB3E-zDVSQw" allow="accelerator; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="taburi-iframe">
+              <a href="https://www.youtube.com/embed/UB3E-zDVSQw" target="ifr-video">Gucci's Fall Winter 2024</a>
+              <a href="https://www.youtube.com/embed/o5fC5LsOp6g" target="ifr-video">Chanel Spring-Summer 2024</a>
+              <a href="https://www.youtube.com/embed/M8YjvHYbZ9w" target="ifr-video">Louis Vuitton Fall 2024</a>
+            </div>
+        </div>        
+      </div>
+      
+      <!-- Footer Area -->
+      <footer class="grid-area-footer grid-item">
+        <a href="#" id="link-top" style="padding: 3%;"><div id="triunghi"></div></a>
+        <br>
+        <a href="mailto:popmatei70@gmail.com" class="BUTTON_YEV" style="align-self: center;">Mail Me</a>
+        <br>
+        <a href="tel:+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-gear fa-fw fa-spin"></span>Call Us: +40726195996 </a>
+        <br>
+        <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica" target="_blank" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-house"></span> Visit Us: Strada Academiei 14, Bucharest, Romania</a>
+        <br>
+        <a href="https://wa.me/+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-handshake"></span>Chat on WhatsApp</a>
+        <br>
+        <small style="align-self: center; margin-right: 20px; font-size: larger;">&copy;<time datetime="2024-03-03" style="font-size: medium;">3 martie 2024</time>, Toate drepturile rezervate.</small>
+      </footer>
+    </div>
   </main>
-  <footer>
-    <a href="#" id="link-top" style="padding: 3%;"><div id="triunghi"></div></a>
-    <br>
-    <a href="mailto:popmatei70@gmail.com" class="BUTTON_YEV" style="align-self: center;">Mail Me</a>
-    <br>
-    <a href="tel:+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-gear fa-fw fa-spin"></span>Call Us: +40726195996 </a>
-    <br>
-    <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica" target="_blank" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-house"></span> Visit Us: Strada Academiei 14, Bucharest, Romania</a>
-    <br>
-    <a href="https://wa.me/+40726195996" style="align-self: flex-end; margin-right: 20px;"><span class="fas fa-regular fa-handshake"></span>Chat on WhatsApp</a>
-    <br>
-    <small style="align-self: center; margin-right: 20px; font-size: larger;">&copy;<time datetime="2024-03-03" style="font-size: medium;">3 martie 2024</time>, Toate drepturile rezervate.</small>
-  </footer>
-  <script src="js/script.js"></script>
+
+  <!-- JavaScript to manage active class on iframe links -->
+  <script>
+    const links = document.querySelectorAll('.taburi-iframe a');
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            links.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+  </script>
 </body>
 </html>
