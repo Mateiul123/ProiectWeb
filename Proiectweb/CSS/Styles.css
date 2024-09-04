@@ -48,49 +48,40 @@ table {
     src: url(/Proiectweb/Fonts/Nosifer-Regular.ttf);
 }
 
+/* Variables for color themes */
+:root {
+    --primary-bg-color: #b30000;
+    --primary-text-color: #ffffff;
+    --secondary-bg-color: #003300;
+    --secondary-text-color: #ADFE03;
+    --highlight-color: #ff9933;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
 .header{
-    background-color: rgb(90, 1, 1) ;
+    background-color: var(--secondary-bg-color);
     padding: 5%;
 }
 
 .Firstpart{
     text-align: center; 
-    background-color: rgb(90, 1, 1);
+    background-color: var(--secondary-bg-color);
 }
 
 h1{
     font-family: 'Fonth1';
     margin: 50px auto 100 auto;
     font-size: 300%;
-    color: #553283;
-}
-
-body {
-    margin: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main{
-    background-color: #000000;
-    padding-bottom: 2%;
-    color:rgb(90, 1, 1) ;
-}
-
-hr{
-    display: block;
-    margin: 0 auto;
-    height:20px;
-    border:0;
+    color: var(--highlight-color);
 }
 
 button {
     display : block; 
-    background-color:rgb(90, 1, 1) ;
+    background-color: var(--secondary-bg-color);
     position: inherit;
 }
 button iframe {
@@ -107,9 +98,9 @@ footer{
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
-    background-color: #ADFE03;
+    background-color: var(--primary-bg-color);
     padding: 50px 20px;
-    color: rgb(90, 1, 1);
+    color: var(--primary-text-color);
 }
 
 .drepturiautor{
@@ -125,12 +116,12 @@ footer{
     font-size: 20px;
     font-weight: 100;
     padding: 20px;
-    background-color:#ADFE03;
-    -webkit-box-shadow: 1px 1px 20px 0 rgb(141,39,39);
-    -moz-box-shadow: 1px 1px 20px 0 rgb(141, 39, 39);
-    box-shadow: 1px 1px 20px 0 rgb(202, 15, 15);
-    text-shadow: 1px 1px 20px rgb(141, 39, 39);
-    border: solid #000000 1px;
+    background-color: var(--highlight-color);
+    -webkit-box-shadow: 1px 1px 20px 0 var(--primary-bg-color);
+    -moz-box-shadow: 1px 1px 20px 0 var(--primary-bg-color);
+    box-shadow: 1px 1px 20px 0 var(--primary-bg-color);
+    text-shadow: 1px 1px 20px var(--primary-bg-color);
+    border: solid var(--primary-bg-color) 1px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -139,13 +130,13 @@ footer{
 }
 
 .BUTTON_YEV:hover {
-    border: solid #000000 1px;
-    background: rgb(141,39,39);
-    background-image: -webkit-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
-    background-image: -moz-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
-    background-image: -ms-linear-gradient(top, rgb(141,39,39), rgb(141,39,39));
-    background-image: -o-linear-gradient(top,  rgb(141,39,39),rgb(141,39,39));
-    background-image: -webkit-gradient(to bottom, rgb(141,39,39), rgb(141,39,39));
+    border: solid var(--primary-bg-color) 1px;
+    background: var(--highlight-color);
+    background-image: -webkit-linear-gradient(top, var(--highlight-color), var(--highlight-color));
+    background-image: -moz-linear-gradient(top, var(--highlight-color), var(--highlight-color));
+    background-image: -ms-linear-gradient(top, var(--highlight-color), var(--highlight-color));
+    background-image: -o-linear-gradient(top,  var(--highlight-color), var(--highlight-color));
+    background-image: -webkit-gradient(to bottom, var(--highlight-color), var(--highlight-color));
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -159,63 +150,58 @@ footer{
     align-items: center;
     justify-content: flex-start;
     padding: 0;
-    background-color: transparent; /* Ensure background is transparent */
-    border: 5px solid #03855e;
+    background-color: transparent;
+    border: 5px solid var(--highlight-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
-    width: 90%;
+    width: 100%;
     max-width: 700px;
     position: relative;
     border-radius: 10px;
-    overflow: visible; /* Ensure elements can extend outside the container */
+    overflow: visible;
 }
 
-/* Iframe Styling */
 .container-iframe > iframe {
     width: 100%;
     height: 315px;
     border: none;
-    border-radius: 10px 10px 0 0; /* Rounded top corners */
-    z-index: 1; /* Ensure iframe stays above the background */
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
 }
 
-/* Tabs Styling */
 .taburi-iframe {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Make sure it matches the container */
+    width: 100%;
     position: absolute;
-    bottom: -35px; /* Move the buttons below the container */
+    bottom: -35px;
     left: 0;
-    background-color: transparent; /* Ensure buttons have no background */
+    background-color: transparent;
     padding: 0;
-    border-bottom-left-radius: 10px; /* Rounded bottom corners to match container */
-    border-bottom-right-radius: 10px; /* Rounded bottom corners to match container */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-/* Buttons within Tabs */
 .taburi-iframe > a {
     flex: 1;
     text-align: center;
     margin: 0 5px;
-    background-color: #03855e;
+    background-color: var(--highlight-color);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.3); /* Subtle inner shadow */
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.3);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect on Buttons */
 .taburi-iframe > a:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Add transparency on hover */
-    color: #03855e;
-    box-shadow: inset 0px 0px 20px rgba(3, 133, 94, 0.5); /* Subtle inner shadow on hover */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--highlight-color);
+    box-shadow: inset 0px 0px 20px rgba(3, 133, 94, 0.5);
 }
 
-/* Media Query for responsiveness */
 @media screen and (max-width: 700px) {
     .container-iframe {
         width: 100%;
@@ -229,12 +215,17 @@ footer{
         padding: 5px 0;
         font-size: 0.9rem;
     }
+
+    /* Hide iframe section on medium and small screens */
+    .container-iframe {
+        display: none;
+    }
 }
 
 .custom-table {
     width: 100%;
     border-collapse: collapse;
-    border: 6px double #553283; 
+    border: 6px double var(--highlight-color); 
     padding: 5px;
 }
 
@@ -245,28 +236,39 @@ footer{
     transition: border 0.75s ease-in-out;
 }
 
-/* Alternating column text color */
 .custom-table td:nth-child(odd), .custom-table th:nth-child(odd) {
-    color: #ff0000;
+    color: var(--primary-text-color);
 }
 
 .custom-table td:nth-child(even), .custom-table th:nth-child(even) {
-    color: #553283;
+    color: var(--highlight-color);
 }
 
 .custom-table tbody tr:hover td {
-    background-color: #ADFE03;
+    background-color: var(--highlight-color);
     color: #000000;
-    border: 5px solid #ADFE03;
+    border: 5px solid var(--highlight-color);
     transition: background-color 0.75s, color 0.75s, border-color 0.75s, border-width 0.75s;
 }
 
 .custom-table caption {
     caption-side: bottom;
     text-align: center;
-    color: #ADFE03;
+    color: var(--highlight-color);
     font-weight: bold;
     margin-top: 10px;
+}
+
+/* Adding scrollbar to the table container for small and medium screens */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
+
+@media screen and (max-width: 600px) {
+    .custom-table {
+        min-width: 1000px; /* Force the table to be wider than the screen to enable scrolling */
+    }
 }
 
 .grid-container {
@@ -279,7 +281,7 @@ footer{
         "area4 area4 area2 area2"
         "area8 area8 area8 area8"
         "footer footer footer footer";
-    gap: 20px; /* Adjust as necessary */
+    gap: 20px;
     padding: 20px;
 }
 
@@ -292,7 +294,6 @@ footer{
 .grid-area-6 { grid-area: area6; }
 .grid-area-7 { grid-area: area7; }
 .grid-area-8 { grid-area: area8; }
-.grid-area-9 { grid-area: area9; }
 .grid-area-footer { grid-area: footer; }
 
 /* Responsive adjustments */
@@ -344,16 +345,16 @@ html {
 /* Additional styles for padding, background, and other effects as needed */
 .grid-item {
     padding: 15px;
-    background-color: #222; /* Example background color, adjust as needed */
-    color: white;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for individual areas */
 .grid-area-1, .grid-area-2, .grid-area-3, .grid-area-4, 
-.grid-area-5, .grid-area-6, .grid-area-7, .grid-area-8, .grid-area-9 {
-    border: 2px solid #ADFE03; /* Add some border to distinguish areas */
+.grid-area-5, .grid-area-6, .grid-area-7, .grid-area-8 {
+    border: 2px solid var(--highlight-color);
     padding: 15px;
-    background-color: rgba(173, 254, 3, 0.2); /* Add some transparency for better distinction */
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
