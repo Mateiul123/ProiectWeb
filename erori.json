@@ -1,0 +1,18 @@
+{
+    "cale_baza": "/resurse/imagini/erori/",
+    "eroare_default": {
+      "titlu": "Eroare",
+      "text": "Oops! Something went wrong.",
+      "imagine": "default_error.png"
+    },
+    "info_erori": [
+      {
+        "identificator": 404,
+        "status": true,
+        "titlu": "Pagina nu a fost gasita",
+        "text": "Pagina pe care o cautati nu exista!",
+        "imagine": "404_error.png"
+      }
+    ]
+  }
+  
