@@ -1,0 +1,181 @@
+// Define Variables for the theme colors
+$primary-color: #009900;
+$secondary-color: #ff9933;
+$highlight-color: #ffaa00;
+$hover-color: #ffcc00;
+$background-color: #002200;
+$white-color: #fff;
+$dropdown-bg: #553283;
+$submenu-hover: #fe0303;
+$border-radius: 5px;
+
+// Mixin for hover shadow effect
+@mixin hover-shadow($color) {
+  box-shadow: inset 0 0 10px $color;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+// Styling the menu
+.menu-wrap {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-right: 20px;
+      cursor: pointer;
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        border-radius: $border-radius;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $highlight-color;
+          @include hover-shadow($highlight-color);
+        }
+      }
+
+      // Dropdown for large screens
+      &:hover > .dropdown {
+        display: block;
+        animation: slideDown 0.3s ease-out;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $dropdown-bg;
+        padding: 10px;
+        border-radius: $border-radius;
+
+        li {
+          a {
+            padding: 10px 20px;
+            background-color: $dropdown-bg;
+
+            &:hover {
+              background-color: $submenu-hover;
+            }
+          }
+
+          .sub-dropdown {
+            display: none;
+
+            li a {
+              padding-left: 30px;
+            }
+          }
+
+          &:hover > .sub-dropdown {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hamburger menu styles for small screens
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  div {
+    width: 30px;
+    height: 2px;
+    background-color: $white-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+
+.toggler {
+  display: none;
+}
+
+.toggler:checked + .hamburger div {
+  transform: rotate(45deg);
+}
+
+.toggler:checked ~ .menu {
+  display: block;
+}
+
+// For small screens, the menu behaves differently
+@media only screen and (max-width: 800px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+
+    ul {
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        margin-right: 0;
+
+        a {
+          padding: 15px 20px;
+          text-align: left;
+        }
+
+        .dropdown {
+          display: none;
+          position: static;
+          padding-left: 20px;
+        }
+
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+// Animations
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Transition for sub-menu arrow
+.dropdown li a::before {
+  content: "→";
+  padding-right: 10px;
+  display: inline-block;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.dropdown li:hover a::before {
+  transform: translateX(0);
+  opacity: 1;
+}

@@ -1,0 +1,73 @@
+@media print {
+    img, video, iframe, .container-iframe, figcaption, #link-top {
+        display: none;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer::before {
+        content: "Acesta este un proiect școlar!";
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+        border: 4px inset black;
+        position: fixed;
+        bottom: 0;
+    }
+
+    h1 {
+        text-align: center;
+        page-break-after: avoid;
+    }
+
+    nav ul {
+        list-style-type: disc;
+        text-align: center;
+    }
+
+    nav ul ul {
+        display: none; /* Hide submenus */
+    }
+
+    nav {
+        page-break-after: always;
+    }
+
+    @page {
+        margin-left: 3cm;
+        margin-right: 1cm;
+    }
+
+    @page :right {
+        margin-right: 3cm;
+        margin-left: 1cm;
+    }
+
+    body::after {
+        content: "Matei\nPop"; 
+        position: fixed;
+        right: 1cm;
+        bottom: 1cm;
+        width: 4cm;
+        height: 1cm;
+        text-align: center;
+        font-weight: bold;
+        border: 3px solid black;
+        border-radius: 10px;
+        opacity: 0.4;
+        page-break-before: always;
+    }
+
+    footer {
+        page-break-before: always;
+    }
+}
